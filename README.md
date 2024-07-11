@@ -9,6 +9,19 @@ articles' metadata by keywords. In case a news server is unavailable, the applic
 
 For the implementation used offered app skeleton
 
+Extra note:
+- Conteinerization not done due time (wanted to finish till the end of this week), if you are interested how I did conternerization, check my other project here:
+same goes for using .env variables and customization of services etc.
+https://github.com/Acnologia7/img-sorter-by-color
+
+- added some commentary into code to clarify why I modified some things from skeleton (db model check for unique on URL etc.)
+- but mostly I wanted to preserve it as much as possible
+- scrapers are scrapping articles from homepages of news servers only, would be better to have some kind of automated browsing (via selenium and headless broser) due to websites being dynamic, but for demonstration I hope it is ok.
+- some variables are hardcoded which is not ok, but as stated above, wanted to put it out fast as prototype
+- scheduler is simple while loop, I think it is little bit of overkill, but my choice would be otherwise Celery or APScheduler for scrapers (or how is most of the time done by a chron job)
+- UI is just simple the most basic Page just to demonstrate connection between FE and BE using API and showing results.
+
+
 Requirements:
 - Python 3.12, `pip`
 - docker and docker-compose
