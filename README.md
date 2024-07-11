@@ -10,7 +10,7 @@ articles' metadata by keywords. In case a news server is unavailable, the applic
 For the implementation used offered app skeleton
 
 Requirements:
-- Python 3.8+, `pip`
+- Python 3.12, `pip`
 - docker and docker-compose
 - Node.js 20.15.0, `npm`
 ## Setup
@@ -18,7 +18,7 @@ Requirements:
 - Backend
 ```bash
 # Virtual env creation
-python3.8 -m venv .venv
+python3.12 -m venv .venv
 
 # Dependencies installation
 .venv/bin/pip install -U pip
